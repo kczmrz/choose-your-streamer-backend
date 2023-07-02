@@ -14,8 +14,10 @@ db_status.once('open', () => console.log('Connected to Database'))
 
 app.use(express.json())
 app.use(cors())
-app.header("Content-Security-Policy: default-src *; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' stackexchange.com");                    
-
+app.use((req, res, next) => {
+    res.setHeader('Content-Security-Policy', "default-src 'self' https://happy-threads-pig.cyclic.app");
+        next();
+  });
 app.set('json spaces', 2);
 
 /* Streamers endpoint */
