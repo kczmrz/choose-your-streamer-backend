@@ -5,8 +5,9 @@
 ` git clone https://github.com/kczmrz/choose-your-streamer-backend/.git `<br/>
 `cd ..files/choose-your-streamer-backend`<br/>
 `npm install `<br/>
+`Configure .env file ` <br/>
 `npm start`<br/>
-`Configure .env file `
+
 
 
 
