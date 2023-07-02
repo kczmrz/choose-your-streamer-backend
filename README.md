@@ -8,6 +8,8 @@
 `Configure .env file ` <br/>
 `npm start`<br/>
 
+# ENV file
+`DATABASE = DB_LINK`
 
 
 
